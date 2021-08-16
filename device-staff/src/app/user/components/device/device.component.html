@@ -1,0 +1,55 @@
+<h2 class="content-block">My device</h2>
+
+
+<dx-data-grid #dataGrid class="dx-card wide-card"
+              [dataSource]="dataSource"
+              [showColumnLines]="true"
+              [showRowLines]="true"
+              [showBorders]="true"
+              [rowAlternationEnabled]="true"
+              [columnAutoWidth]="true"
+              [columnHidingEnabled]="true">
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+  <dxo-editing [allowDeleting]="true"> </dxo-editing>
+
+  <dxi-column dataField="image"
+              [width]="190"
+              cellTemplate="cellTemplate">
+  </dxi-column>
+
+  <dxi-column dataField="name" caption="Name">
+  </dxi-column>
+
+  <dxi-column dataField="seri"
+              caption="Seri">
+  </dxi-column>
+
+  <dxi-column dataField="idProductType"
+              caption="Product Type">
+    <dxo-lookup [dataSource]="productTypeDevice"
+                valueExpr="id"
+                displayExpr="name">
+    </dxo-lookup>
+  </dxi-column>
+
+  <dxi-column dataField="idBrand"
+              caption="Brand">
+    <dxo-lookup [dataSource]="brandDevice"
+                valueExpr="id"
+                displayExpr="name">
+    </dxo-lookup>
+  </dxi-column>
+
+  <dxi-column dataField="startTime"
+              caption="Start Time">
+  </dxi-column>
+
+  <div *dxTemplate="let data of 'cellTemplate'">
+    <img [src]="backendURL + data.value" width="150" />
+  </div>
+
+</dx-data-grid>

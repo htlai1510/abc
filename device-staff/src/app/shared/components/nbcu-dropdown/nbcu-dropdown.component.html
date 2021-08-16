@@ -1,0 +1,23 @@
+<dx-drop-down-box [(value)]="treeBoxValue"
+                  valueExpr="{{keyExpr}}"
+                  displayExpr="{{displayExpr}}"
+                  placeholder="Select..."
+                  [showClearButton]="true"
+                  [dataSource]="dataSource"
+                  (onValueChanged)="syncDropdownSelection()">
+
+  <div *dxTemplate="let data of 'content'">
+    <dx-tree-view [dataSource]="dataSource"
+                  keyExpr="{{keyExpr}}"
+                  selectionMode="{{_selectionMode}}"
+                  [searchEnabled]="true"
+                  searchMode="contains"
+                  showCheckBoxesMode="{{checkBoxMode}}"
+                  selectAllText="{{selectAllText}}"
+                  displayExpr="{{displayExpr}}"
+                  [selectByClick]="true"
+                  (onContentReady)="syncTreeViewSelection($event)"
+                  (onSelectionChanged)="treeView_itemSelectionChanged($event)">
+    </dx-tree-view>
+  </div>
+</dx-drop-down-box>

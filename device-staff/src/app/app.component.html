@@ -1,0 +1,7 @@
+<div style="width: 100%" *ngIf="isAuthenticated(); else unauthenticated">
+    <router-outlet></router-outlet>
+</div>
+
+<ng-template #unauthenticated>
+  <app-unauthenticated-content></app-unauthenticated-content>
+</ng-template>

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.11.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeviceManager.EntityFramework\DeviceManager.EntityFramework.csproj" />
+    <ProjectReference Include="..\DeviceManager.IRepository\DeviceManager.IRepository.csproj" />
+    <ProjectReference Include="..\DeviceManager.IService\DeviceManager.IService.csproj" />
+    <ProjectReference Include="..\DeviceManager.Repository\DeviceManager.Repository.csproj" />
+    <ProjectReference Include="..\DeviceManager.Service\DeviceManager.Service.csproj" />
+    <ProjectReference Include="..\DeviceManager.ViewModel\DeviceManager.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\device\" />
+    <Folder Include="wwwroot\images\staff\" />
+  </ItemGroup>
+
+
+</Project>

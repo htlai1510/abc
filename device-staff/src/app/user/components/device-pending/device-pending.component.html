@@ -1,0 +1,58 @@
+<h2 class="content-block">Pending devices</h2>
+
+
+<dx-data-grid id="gridContainer" #dataGrid class="dx-card wide-card"
+              [dataSource]="dataSource"
+              [showColumnLines]="true"
+              [showRowLines]="true"
+              [showBorders]="true"
+              [rowAlternationEnabled]="true"
+              [columnAutoWidth]="true"
+              [columnHidingEnabled]="true">
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+  <dxi-column dataField="image"
+              [width]="130"
+              cellTemplate="cellTemplate">
+  </dxi-column>
+
+  <dxi-column dataField="name"
+              caption="Name">
+  </dxi-column>
+
+  <dxi-column dataField="seri"
+              caption="Seri">
+  </dxi-column>
+
+  <dxi-column dataField="idProductType"
+              caption="Product Type">
+    <dxo-lookup [dataSource]="productTypeDevice"
+                valueExpr="id"
+                displayExpr="name">
+    </dxo-lookup>
+  </dxi-column>
+
+  <dxi-column dataField="idBrand"
+              caption="Brand">
+    <dxo-lookup [dataSource]="brandDevice"
+                valueExpr="id"
+                displayExpr="name">
+    </dxo-lookup>
+  </dxi-column>
+
+  <dxi-column dataField="lastUpdatedTracking"
+              caption="Created day">
+  </dxi-column>
+  <dxi-column cellTemplate="cellTemplate1">
+  </dxi-column>
+  <div *dxTemplate="let data of 'cellTemplate'">
+    <img [src]="backendURL + data.value" width="100" />
+  </div>
+  <div *dxTemplate="let button of 'cellTemplate1'">
+    <dx-button icon="remove" type="default" stylingMode="text" (onClick)="Confirm(button.data)"></dx-button>
+  </div>
+
+</dx-data-grid>

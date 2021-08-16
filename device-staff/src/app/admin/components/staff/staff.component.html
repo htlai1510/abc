@@ -1,0 +1,119 @@
+<h2 class="content-block">Staff</h2>
+<dx-data-grid class="dx-card wide-card"
+              [dataSource]="dataSource"
+              [showColumnLines]="true"
+              [showRowLines]="true"
+              [showBorders]="true"
+              [rowAlternationEnabled]="true"
+              [columnAutoWidth]="true"
+              [columnHidingEnabled]="true"
+              (onInitNewRow)="onInitNewRow($event)"
+              (onRowUpdating)="onUpdateRow($event)">
+
+  <dxo-paging [pageSize]="10"></dxo-paging>
+  <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+  <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+  <dxo-editing mode="popup"
+               [allowUpdating]="true"
+               [allowAdding]="true"
+               [allowDeleting]="true">
+    <dxo-popup title="Staff Infomation"
+               [showTitle]="true"
+               [width]="700"
+               [height]="700">
+    </dxo-popup>
+    <dxo-form>
+      <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+        <dxi-item dataField="image" [colSpan]="2"></dxi-item>
+      </dxi-item>
+      <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+        <dxi-item dataField="fullname"></dxi-item>
+        <dxi-item dataField="age"></dxi-item>
+        <dxi-item dataField="numberPhone"></dxi-item>
+        <dxi-item dataField="gender"></dxi-item>
+        <dxi-item dataField="username"></dxi-item>
+        <dxi-item dataField="password"></dxi-item>
+        <dxi-item dataField="address"></dxi-item>
+        <dxi-item dataField="idPosition"></dxi-item>
+        <dxi-item dataField="idLocation"></dxi-item>
+      </dxi-item>
+    </dxo-form>
+  </dxo-editing>
+  <dxi-column dataField="image"
+              [width]="130"
+              cellTemplate="cellTemplate"
+              editCellTemplate="editCellTemplate">
+  </dxi-column>
+  <dxi-column dataField="fullname"
+              caption="Name">
+    <dxi-validation-rule type="required" message="Fullname is required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="username"
+              caption="Username"
+              [visible]="false">
+    <dxi-validation-rule type="required" message="Username is required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="password"
+              caption="Password"
+              [visible]="false">
+    <dxi-validation-rule type="required" message="Password is required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="age"
+              caption="Age">
+    <dxi-validation-rule type="required" message="Age is required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="numberPhone"
+              caption="Number Phone">
+    <dxi-validation-rule type="required" message="Numberphone is required"></dxi-validation-rule>
+    <dxi-validation-rule type="pattern" [pattern]="phonePattern" message="Numberphone is invalid"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="gender"
+              caption="Gender">
+    <dxo-lookup [dataSource]="genderStaff"
+                valueExpr="value"
+                displayExpr="name">
+    </dxo-lookup>
+    <dxi-validation-rule type="required" message="Gender is required"></dxi-validation-rule>
+  </dxi-column>
+
+  <dxi-column dataField="address"
+              caption="Address">
+    <dxi-validation-rule type="required" message="Address is required"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="idPosition"
+              caption="Position">
+    <dxo-lookup [dataSource]="positionStaff"
+                valueExpr="id"
+                displayExpr="name">
+    </dxo-lookup>
+    <dxi-validation-rule type="required" message="Position is required"></dxi-validation-rule>
+  </dxi-column>
+
+  <dxi-column caption="Location"
+              dataField="idLocation">
+    <dxo-lookup [dataSource]="locationStaff"
+                valueExpr="key"
+                displayExpr="value">
+    </dxo-lookup>
+    <dxi-validation-rule type="required" message="Location is required"></dxi-validation-rule>
+  </dxi-column>
+
+
+  <div *dxTemplate="let data of 'cellTemplate'">
+    <img [src]="backendURL + data.value" width="100" />
+  </div>
+  <div *dxTemplate="let data of 'editCellTemplate'">
+    <img #uploadedImage class="uploadedImage" [src]="backendURL + data.value" height="50" />
+    <dx-file-uploader #fileUploader
+                      [multiple]="false"
+                      [accept]="['.jpg','.jpeg', '.png']"
+                      uploadMode="instantly"
+                      [uploadUrl]="backendURL + 'api/Staff/UploadImage'"
+                      (onValueChanged)="onValueChanged($event)"
+                      (onUploaded)="onUploaded($event, data)"
+                      (onUploadError)="onUploadError($event)">
+    </dx-file-uploader>
+  </div>
+</dx-data-grid>
+

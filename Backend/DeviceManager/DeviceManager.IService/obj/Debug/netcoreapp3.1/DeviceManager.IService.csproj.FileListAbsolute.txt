@@ -1,0 +1,17 @@
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.IService.deps.json
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.IService.runtimeconfig.json
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.IService.runtimeconfig.dev.json
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.IService.dll
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.IService.pdb
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.EntityFramework.dll
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.ViewModel.dll
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.EntityFramework.pdb
+D:\DeviceManager\DeviceManager.IService\bin\Debug\netcoreapp3.1\DeviceManager.ViewModel.pdb
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.csproj.AssemblyReference.cache
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.AssemblyInfoInputs.cache
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.AssemblyInfo.cs
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.csproj.CoreCompileInputs.cache
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.csproj.CopyComplete
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.dll
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.pdb
+D:\DeviceManager\DeviceManager.IService\obj\Debug\netcoreapp3.1\DeviceManager.IService.genruntimeconfig.cache

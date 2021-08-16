@@ -1,0 +1,32 @@
+<h2 class="content-block">Personal information</h2>
+
+<div class="content-block dx-card responsive-paddings">
+  <div>
+    <img src="{{BackEnd}}{{staff?.image}}" height=" 50"/>
+  </div>
+  <dx-form id="form"
+           [formData]="staff">
+    <dxi-item itemType="group" [colCount]="2" [colSpan]="2">
+      <dxi-item dataField="fullname"></dxi-item>
+      <dxi-item dataField="age"></dxi-item>
+      <dxi-item dataField="gender"
+                editorType="dxSelectBox"
+                [editorOptions]="{ items: gender, displayExpr: 'name', valueExpr: 'value', readOnly: true}">
+      </dxi-item>
+      <dxi-item dataField="numberPhone"></dxi-item>
+      <dxi-item dataField="address"></dxi-item>
+      <dxi-item dataField="idPosition"
+                editorType="dxSelectBox"
+                [editorOptions]="{ dataSource: position, displayExpr: 'name', valueExpr: 'id', readOnly: true}">
+        <dxo-label text="Position"></dxo-label>
+
+        <dxo-label text="Position"></dxo-label>
+      </dxi-item>
+      <dxi-item dataField="idLocation"
+                editorType="dxSelectBox"
+                [editorOptions]="{ items: location, displayExpr: 'value', valueExpr: 'key', readOnly: true}">
+        <dxo-label text="Location"></dxo-label>
+      </dxi-item>
+    </dxi-item>
+  </dx-form>
+</div>

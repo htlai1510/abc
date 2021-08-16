@@ -1,0 +1,27 @@
+<div class="background">
+  <form class="content-form" (submit)="formSubmit($event)">
+    <dx-form [formData]="borrowForm" [disabled]="loading">
+
+      <dxi-item dataField="idProductType"
+                editorType="dxSelectBox"
+                [editorOptions]="{ items: productTypeDevice, displayExpr: 'name', valueExpr: 'id'}">
+        <dxo-label text="Product Type"></dxo-label>
+        <dxi-validation-rule type="required" message="Product type is required"></dxi-validation-rule>
+      </dxi-item>
+      <dxi-item dataField="amount"
+                editorType="dxNumberBox"
+                [editorOptions]="{ items: productTypeDevice, displayExpr: 'name', valueExpr: 'id'}">
+        <dxo-label text="Amount"></dxo-label>
+        <dxi-validation-rule type="required" message="Amount is required"></dxi-validation-rule>
+      </dxi-item>
+
+      <dxi-item itemType="button">
+        <dxo-button-options width="100%" type="default" text="Send" [useSubmitBehavior]="true">
+        </dxo-button-options>
+      </dxi-item>
+    </dx-form>
+  </form>
+</div>
+
+
+

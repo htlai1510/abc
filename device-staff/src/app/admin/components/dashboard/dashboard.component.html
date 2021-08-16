@@ -1,0 +1,20 @@
+<dx-pie-chart id="pie"
+              title="Number of devices"
+              palette="bright"
+              [dataSource]="device"
+              (onPointClick)="pointClickHandler($event)"
+              (onLegendClick)="legendClickHandler($event)">
+  <dxo-legend orientation="horizontal"
+              itemTextPosition="right"
+              horizontalAlignment="center"
+              verticalAlignment="bottom"></dxo-legend>
+  <dxi-series argumentField="key"
+              valueField="value">
+    <dxo-label [visible]="true">
+      <dxo-connector [visible]="true"
+                     [width]="2"></dxo-connector>
+    </dxo-label>
+  </dxi-series>
+</dx-pie-chart>
+
+
