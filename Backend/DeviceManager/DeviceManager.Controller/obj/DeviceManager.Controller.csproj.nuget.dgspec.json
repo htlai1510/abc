@@ -1,0 +1,501 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\DeviceManager\\DeviceManager.Controller\\DeviceManager.Controller.csproj": {}
+  },
+  "projects": {
+    "D:\\DeviceManager\\DeviceManager.Controller\\DeviceManager.Controller.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.Controller\\DeviceManager.Controller.csproj",
+        "projectName": "DeviceManager.Controller",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.Controller\\DeviceManager.Controller.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.Controller\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.Repository\\DeviceManager.Repository.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.Repository\\DeviceManager.Repository.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.Service\\DeviceManager.Service.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.Service\\DeviceManager.Service.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.11.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj",
+        "projectName": "DeviceManager.EntityFramework",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj",
+        "projectName": "DeviceManager.IRepository",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.IRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj",
+        "projectName": "DeviceManager.IService",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.IService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DeviceManager\\DeviceManager.Repository\\DeviceManager.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.Repository\\DeviceManager.Repository.csproj",
+        "projectName": "DeviceManager.Repository",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.Repository\\DeviceManager.Repository.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DeviceManager\\DeviceManager.Service\\DeviceManager.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.Service\\DeviceManager.Service.csproj",
+        "projectName": "DeviceManager.Service",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.Service\\DeviceManager.Service.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.IRepository\\DeviceManager.IRepository.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.IService\\DeviceManager.IService.csproj"
+              },
+              "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj",
+        "projectName": "DeviceManager.ViewModel",
+        "projectPath": "D:\\DeviceManager\\DeviceManager.ViewModel\\DeviceManager.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\HTL\\.nuget\\packages\\",
+        "outputPath": "D:\\DeviceManager\\DeviceManager.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HTL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj": {
+                "projectPath": "D:\\DeviceManager\\DeviceManager.EntityFramework\\DeviceManager.EntityFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

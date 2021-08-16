@@ -1,0 +1,27 @@
+<dx-drop-down-box [(value)]="treeBoxValue"
+                  valueExpr="id"
+                  displayExpr="fullname"
+                  placeholder="Select..."
+                  [showClearButton]="true"
+                  [dataSource]="dropDownDataSource"
+                  (onValueChanged)="syncTreeViewSelection1()">
+
+  <div *dxTemplate="let data of 'content'">
+    <dx-radio-group [dataSource]="gender"
+                    layout="horizontal"
+                    displayExpr="value"
+                    (onValueChanged)="handleValueChange($event)">
+    </dx-radio-group>
+    <dx-tree-view [dataSource]="treeDataSource"
+                  keyExpr="id"
+                  selectionMode="single"
+                  [searchEnabled]="true"
+                  searchMode="contains"
+                  showCheckBoxesMode="normal"
+                  displayExpr="fullname"
+                  [selectByClick]="true"
+                  (onContentReady)="syncTreeViewSelection($event)"
+                  (onItemSelectionChanged)="treeView_itemSelectionChanged($event)">
+    </dx-tree-view>
+  </div>
+</dx-drop-down-box>

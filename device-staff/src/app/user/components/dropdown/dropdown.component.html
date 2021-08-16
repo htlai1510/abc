@@ -1,0 +1,23 @@
+<div class="content-block">
+  <app-nbcu-dropdown [dataSource]="dataDropdown"
+                     keyExpr="id"
+                     displayExpr="name"
+                     selectAllText="Custom text"
+                     [isSingle]="true"
+                     (onSelectionChange)="getValueSelected($event)">
+  </app-nbcu-dropdown>
+</div> 
+
+<br/>
+
+<app-nbcu-horizontal-tabs useNotify="true"
+                          notify="notify">
+  <app-nbcu-horizontal-tab tabTitle="Tab 1">
+    <br/>
+    Content of tab 1
+  </app-nbcu-horizontal-tab>
+  <app-nbcu-horizontal-tab tabTitle="Tab 2">
+    <br/>
+    Content of tab 2
+  </app-nbcu-horizontal-tab>
+</app-nbcu-horizontal-tabs>

@@ -1,0 +1,17 @@
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.Repository.deps.json
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.Repository.dll
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.Repository.pdb
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.csproj.AssemblyReference.cache
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.AssemblyInfoInputs.cache
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.AssemblyInfo.cs
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.csproj.CoreCompileInputs.cache
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.dll
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.pdb
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.Repository.runtimeconfig.json
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.Repository.runtimeconfig.dev.json
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.EntityFramework.dll
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.EntityFramework.pdb
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.csproj.CopyComplete
+D:\DeviceManager\DeviceManager.Repository\obj\Debug\netcoreapp3.1\DeviceManager.Repository.genruntimeconfig.cache
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.IRepository.dll
+D:\DeviceManager\DeviceManager.Repository\bin\Debug\netcoreapp3.1\DeviceManager.IRepository.pdb
