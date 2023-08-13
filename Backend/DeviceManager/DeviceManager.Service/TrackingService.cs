@@ -36,6 +36,7 @@ namespace DeviceManager.Service
             _trackingRepository.Commit();
 
             var ef = _trackingRepository.DbContext;
+            abc
             var getDevice = from d in ef.Device
                             join t in ef.Tracking on d.Id equals t.IdDevice
                             where t.Status == 2 && t.IdDevice == tracking.IdDevice
