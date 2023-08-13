@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@3.1.0
+      - name: Restore dependencies
+        run: dotnet restore ./Backend/DeviceManager/DeviceManager.sln
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/dotnet@master
         continue-on-error: true # To make sure that SARIF upload gets called
